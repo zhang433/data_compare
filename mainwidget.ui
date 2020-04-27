@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWidget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="FormBaseInfo" name="tabBaseInfo">
+      <attribute name="title">
+       <string>运行信息</string>
+      </attribute>
+     </widget>
+     <widget class="FormBalise" name="tabBalise">
+      <attribute name="title">
+       <string> 应答器信息</string>
+      </attribute>
+     </widget>
+     <widget class="FormBaliseChk" name="tabBaliseChk">
+      <attribute name="title">
+       <string>  应答器报文比对</string>
+      </attribute>
+     </widget>
+     <widget class="FormTrackInfo" name="tabTrackInfo">
+      <attribute name="title">
+       <string> 轨道区段信息</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FormBaseInfo</class>
+   <extends>QWidget</extends>
+   <header>formbaseinfo.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormBalise</class>
+   <extends>QWidget</extends>
+   <header>formbalise.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormBaliseChk</class>
+   <extends>QWidget</extends>
+   <header>formbalisechk.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormTrackInfo</class>
+   <extends>QWidget</extends>
+   <header>formtrackinfo.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
