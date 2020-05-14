@@ -263,4 +263,4 @@ quint16 EnventControl::calculate_crc(quint16 wCRCin, quint16 wCPoly, quint16 wRe
         }
     }
     return (wCRCin^wResultXOR);
-}
+
